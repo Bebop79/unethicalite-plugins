@@ -159,6 +159,16 @@ public enum Course
 			.append(new Area(new Location(2654, 3300, 3), new Location(2658, 3296, 3), 3), "Gap", "Jump", 15612)
 			.array()
 	),
+
+	APE_COURSE(ObstacleFactory.newInstance(true)
+			.append(new Area(new Location(2755, 2742, 0), new Location(2772, 2754, 0), 0), "Stepping stone", "Jump-to", 15412)
+			.append(new Area(new Location(2753, 2742, 0), new Location(2751, 2741, 0), 0), "Tropical tree", "Climb", 15414)
+			.append(new Area(new Location(2753, 2742, 2), new Location(2751, 2741, 2), 2), "Monkeybars", "Swing Across", 15417)
+			.append(new Area(new Location(2747, 2741, 0), new Location(2747, 2741, 0), 0), "Skull slope", "Climb-up", 1747)
+			.append(new Area(new Location(2738, 2741, 0), new Location(2751, 2728, 0), 0), "Rope", "Swing", 15487)
+			.append(new Area(new Location(2756, 2731, 0), new Location(2760, 2734, 0), 0), "Tropical tree", "Climb-down", 16062)
+			.array()
+	),
 	NEAREST(null);
 
 	private final Obstacle[] obstacles;
